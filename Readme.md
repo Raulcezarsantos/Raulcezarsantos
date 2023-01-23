@@ -4,7 +4,7 @@ Atualmente sou Dev Full Stack Web.
 
 <div align="center">
   <a href="https://github.com/Raulcezarsantos">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Raulcezarsantos)](https://github.com/Raulcezarsantos/github-readme-stats"/>
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Raulcezarsantos=compact&langs_count=7&theme=dracula"/>
 </div>
   <div style="display: inline_block"><br>
