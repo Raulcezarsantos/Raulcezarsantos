@@ -4,7 +4,7 @@ Atualmente sou Dev Full Stack Web.
 
 Portifólio : (https://substantial-porter.surge.sh/)
 
-Clone Netflix: https://powerful-effect.surge.sh/
+
 
 
 
