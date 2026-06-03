@@ -6,7 +6,7 @@ Desenvolvedor de software com foco em integracoes, produtos internos, APIs .NET 
 
 ## Sobre
 
-Atuo em projetos que conectam front-end, back-end, banco de dados, filas e regras de negocio. Meu foco e entregar software com estrutura clara, boa manutencao e menos fragilidade tecnica.
+Atuo em projetos que conectam front-end, back-end, banco de dados, filas, autenticacao e regras de negocio. Meu foco e entregar software com estrutura clara, boa manutencao e menos fragilidade tecnica.
 
 ## Stack principal
 
@@ -31,6 +31,21 @@ Servico de integracao responsavel por sincronizar usuarios, times e eventos entr
 
 Worker .NET para leitura incremental de alteracoes no Active Directory, consolidacao com dados de RM e publicacao de eventos para outros servicos.
 
-## Portifolio
+## Portfolio
 
-O projeto visual deste repositorio esta em [`Portifólio/`](./Portif%C3%B3lio/), com uma landing page refatorada para refletir melhor esse posicionamento tecnico.
+O projeto visual deste repositorio esta em [portfolio/](./portfolio/), com uma landing page em React + TypeScript organizada por `sections`, `components`, `data`, `hooks` e `styles`.
+
+### Rodando localmente
+
+```bash
+cd portfolio
+npm install
+npm run dev
+```
+
+### Build de producao
+
+```bash
+cd portfolio
+npm run build
+```
