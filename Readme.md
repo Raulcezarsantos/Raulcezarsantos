@@ -1,19 +1,36 @@
-## Olá! Eu sou Raul Cezar 🖐️
+# Raul Cezar Santos
 
-[![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/raul-cezar-336b94164/)
+Desenvolvedor de software com foco em integracoes, produtos internos, APIs .NET e interfaces web para contexto corporativo.
 
+[LinkedIn](https://www.linkedin.com/in/raul-cezar-336b94164/) | [GitHub](https://github.com/Raulcezarsantos)
 
-![Raul GitHub stats](https://github-readme-stats.vercel.app/api?username=Raulcezarsantos&show_icons=true&theme=dracula&count_private=true)
+## Sobre
 
-## Tecnologias que eu uso no meu dia
+Atuo em projetos que conectam front-end, back-end, banco de dados, filas e regras de negocio. Meu foco e entregar software com estrutura clara, boa manutencao e menos fragilidade tecnica.
 
-<div style="display: inline_block">
-  <img align="center" alt="html5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-  <img align="center" alt="css" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-  <img align="center" alt="js" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-  <img align="center" alt="ts" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img align="center" alt="react" src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img align="center" alt="nodejs" src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" />
-</div><br/>
+## Stack principal
 
-Apaixonado por tecnologia.
+- .NET 8 / ASP.NET Core
+- React / Vite / TypeScript
+- Oracle / PostgreSQL
+- Azure Active Directory
+- Azure Service Bus
+- Integracoes corporativas e workers
+
+## Projetos em destaque
+
+### ObaHubb
+
+Portal corporativo com React, TypeScript e .NET 8 para autenticacao, menus dinamicos e acesso a sistemas internos.
+
+### Redeoba Eduvem
+
+Servico de integracao responsavel por sincronizar usuarios, times e eventos entre Oracle, Azure Service Bus, Active Directory e Eduvem.
+
+### AdWatcher
+
+Worker .NET para leitura incremental de alteracoes no Active Directory, consolidacao com dados de RM e publicacao de eventos para outros servicos.
+
+## Portifolio
+
+O projeto visual deste repositorio esta em [`Portifólio/`](./Portif%C3%B3lio/), com uma landing page refatorada para refletir melhor esse posicionamento tecnico.
