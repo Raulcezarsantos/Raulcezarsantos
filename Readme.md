@@ -41,6 +41,8 @@ Repositorio separado: [payment-event-hub](https://github.com/Raulcezarsantos/pay
 
 O projeto visual deste repositorio esta em [portfolio/](./portfolio/), com uma landing page em React + TypeScript organizada por `sections`, `components`, `data`, `hooks` e `styles`.
 
+Demo publicada: https://portifoklio-tau.vercel.app/
+
 ### Rodando localmente
 
 ```bash

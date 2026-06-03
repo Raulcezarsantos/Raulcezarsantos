@@ -2,6 +2,10 @@
 
 Portifolio pessoal em React, TypeScript e Vite, estruturado para evolucao de layout, secoes e dados sem concentrar tudo em um unico arquivo.
 
+## Demo
+
+- Site publicado: https://portifoklio-tau.vercel.app/
+
 ## Stack
 
 - React 19
