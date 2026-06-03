@@ -1,4 +1,5 @@
 import type { Project } from "../../data/projects";
+import { Button } from "../../components/ui/Button/Button";
 import { SectionTitle } from "../../components/ui/SectionTitle/SectionTitle";
 import { ProjectCard } from "../../components/shared/ProjectCard/ProjectCard";
 
@@ -40,6 +41,7 @@ export function Projects({ projects, activeProject, onProjectChange }: ProjectsP
                         <p className="project-type">{activeProject.type}</p>
                         <h3>{activeProject.title}</h3>
                         <p>{activeProject.description}</p>
+                        <p className="project-outcome">{activeProject.outcome}</p>
 
                         <div className="project-detail-tags">
                             {activeProject.tags.map((tag) => (
@@ -52,6 +54,18 @@ export function Projects({ projects, activeProject, onProjectChange }: ProjectsP
                                 <li key={bullet}>{bullet}</li>
                             ))}
                         </ul>
+
+                        {activeProject.repositoryUrl ? (
+                            <div className="project-detail-actions">
+                                <Button
+                                    href={activeProject.repositoryUrl}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    {activeProject.repositoryLabel ?? "Ver projeto"}
+                                </Button>
+                            </div>
+                        ) : null}
                     </div>
                 </article>
             </div>

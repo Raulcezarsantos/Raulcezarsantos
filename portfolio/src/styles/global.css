@@ -771,6 +771,15 @@ button {
     gap: 0.6rem;
 }
 
+.project-outcome {
+    margin-top: 1rem;
+    padding: 1rem 1.1rem;
+    border: 1px solid rgba(255, 111, 60, 0.14);
+    border-radius: 20px;
+    background: linear-gradient(180deg, #fff8f3, #fffdf9);
+    color: var(--text);
+}
+
 .project-detail-tags span {
     font-size: 0.86rem;
 }
@@ -781,6 +790,13 @@ button {
     margin-top: 1rem;
     padding-left: 1.1rem;
     color: var(--muted);
+}
+
+.project-detail-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    margin-top: 1.4rem;
 }
 
 .contact-panel {

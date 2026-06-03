@@ -1,7 +1,7 @@
 import { ArrowUpRight, Linkedin, Sparkles } from "lucide-react";
 import heroBackground from "../../assets/images/background.jpg";
-import type { Project } from "../../data/projects";
 import { Button } from "../../components/ui/Button/Button";
+import type { Project } from "../../data/projects";
 
 interface HeroProps {
     activeProject: Project;
@@ -11,16 +11,16 @@ interface HeroProps {
 
 const proofItems = [
     {
-        title: ".NET 8 + React",
+        title: ".NET + React",
         text: "Aplicacoes com front-end, back-end e integracoes na mesma entrega"
+    },
+    {
+        title: "Webhooks e filas",
+        text: "Processamento assincrono, eventos e servicos conectados a APIs externas"
     },
     {
         title: "Produtos internos",
         text: "Portais, fluxos operacionais e sistemas voltados para uso real"
-    },
-    {
-        title: "Oracle, AD e filas",
-        text: "Conexao entre legados, autenticacao e plataformas modernas"
     }
 ];
 
@@ -32,7 +32,8 @@ export function Hero({ activeProject, projects, onProjectChange }: HeroProps) {
                 <h1>Interfaces modernas, integracoes robustas e software corporativo com padrao profissional.</h1>
                 <p className="hero-copy">
                     Desenvolvo produtos internos, APIs e servicos em .NET com foco em clareza,
-                    experiencia de uso e confiabilidade tecnica para ambientes corporativos.
+                    experiencia de uso, integracoes com APIs externas e confiabilidade tecnica
+                    para ambientes corporativos.
                 </p>
 
                 <div className="hero-actions">
@@ -61,13 +62,13 @@ export function Hero({ activeProject, projects, onProjectChange }: HeroProps) {
 
             <div
                 className="hero-stage"
-                aria-label="Destaques visuais do portifolio"
+                aria-label="Destaques visuais do portfolio"
                 style={{
                     backgroundImage: `linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02)), url(${heroBackground})`
                 }}
             >
                 <div className="hero-stage-top">
-                    <p className="spotlight-label">Projeto em evidência</p>
+                    <p className="spotlight-label">Projeto em evidencia</p>
                     <div className="hero-switcher" role="tablist" aria-label="Selecionar projeto em destaque">
                         {projects.map((project) => (
                             <button

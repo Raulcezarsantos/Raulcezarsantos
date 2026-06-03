@@ -31,6 +31,12 @@ Servico de integracao responsavel por sincronizar usuarios, times e eventos entr
 
 Worker .NET para leitura incremental de alteracoes no Active Directory, consolidacao com dados de RM e publicacao de eventos para outros servicos.
 
+### Payment Event Hub
+
+Backend de integracao com ASP.NET Core para recebimento de webhooks Stripe, validacao de assinatura, persistencia do payload bruto, idempotencia e processamento assincrono.
+
+Repositorio separado: [payment-event-hub](https://github.com/Raulcezarsantos/payment-event-hub)
+
 ## Portfolio
 
 O projeto visual deste repositorio esta em [portfolio/](./portfolio/), com uma landing page em React + TypeScript organizada por `sections`, `components`, `data`, `hooks` e `styles`.

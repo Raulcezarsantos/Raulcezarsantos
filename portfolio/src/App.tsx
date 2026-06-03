@@ -15,7 +15,9 @@ const sectionIds = ["inicio", "sobre", "especialidades", "projetos", "experienci
 
 function App() {
     const activeSection = useScrollSpy(sectionIds, 180);
-    const [activeProjectId, setActiveProjectId] = useState(projects[0].id);
+    const [activeProjectId, setActiveProjectId] = useState(
+        projects.find((project) => project.id === "payment-event-hub")?.id ?? projects[0].id
+    );
 
     const activeProject = useMemo(
         () => projects.find((project) => project.id === activeProjectId) ?? projects[0],

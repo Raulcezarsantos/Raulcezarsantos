@@ -1,6 +1,7 @@
 import projectOneImage from "../assets/images/projeto-1.png";
 import projectTwoImage from "../assets/images/projeto-2.png";
 import projectThreeImage from "../assets/images/projeto-3.png";
+import projectFourImage from "../assets/images/projeto-3.jpg";
 
 export interface Project {
     id: string;
@@ -12,6 +13,8 @@ export interface Project {
     image: string;
     tags: string[];
     bullets: string[];
+    repositoryUrl?: string;
+    repositoryLabel?: string;
 }
 
 export const projects: Project[] = [
@@ -65,5 +68,24 @@ export const projects: Project[] = [
             "Consolidacao de dados AD e RM",
             "Publicacao de eventos para filas de integracao"
         ]
+    },
+    {
+        id: "payment-event-hub",
+        type: "Backend de integracao",
+        title: "Payment Event Hub",
+        teaser: "Hub de webhooks com validacao de assinatura, idempotencia, persistencia e processamento assincrono.",
+        description:
+            "Projeto em ASP.NET Core para ingestao de eventos de pagamento via Stripe, armazenamento do payload bruto, controle de duplicidade, fila em memoria, processamento em background e consulta de status por API.",
+        outcome:
+            "Demonstra uma arquitetura de backend voltada para integracoes reais, com foco em confiabilidade operacional, rastreabilidade e reprocessamento de eventos.",
+        image: projectFourImage,
+        tags: [".NET 10", "ASP.NET Core", "Stripe", "Dapper", "SQLite"],
+        bullets: [
+            "Recebimento de webhooks com validacao de assinatura",
+            "Persistencia do evento bruto e controle de idempotencia",
+            "Processamento em background com reprocessamento manual"
+        ],
+        repositoryUrl: "https://github.com/Raulcezarsantos/payment-event-hub",
+        repositoryLabel: "Ver repositorio"
     }
 ];
