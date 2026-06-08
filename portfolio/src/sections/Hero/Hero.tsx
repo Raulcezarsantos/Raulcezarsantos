@@ -1,5 +1,6 @@
 import { ArrowUpRight, Linkedin, Sparkles } from "lucide-react";
 import heroBackground from "../../assets/images/background.jpg";
+import { ProjectPreview } from "../../components/shared/ProjectPreview/ProjectPreview";
 import { Button } from "../../components/ui/Button/Button";
 import type { Project } from "../../data/projects";
 
@@ -95,7 +96,7 @@ export function Hero({ activeProject, projects, onProjectChange }: HeroProps) {
                         </span>
                     </div>
                     <p>{activeProject.teaser}</p>
-                    <img src={activeProject.image} alt={`Preview do projeto ${activeProject.title}`} />
+                    <ProjectPreview project={activeProject} />
                 </article>
 
                 <article className="spotlight-card spotlight-card-secondary">

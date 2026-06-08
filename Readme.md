@@ -19,23 +19,23 @@ Atuo em projetos que conectam front-end, back-end, banco de dados, filas, autent
 
 ## Projetos em destaque
 
-### ObaHubb
-
-Portal corporativo com React, TypeScript e .NET 8 para autenticacao, menus dinamicos e acesso a sistemas internos.
-
-### Redeoba Eduvem
-
-Servico de integracao responsavel por sincronizar usuarios, times e eventos entre Oracle, Azure Service Bus, Active Directory e Eduvem.
-
-### AdWatcher
-
-Worker .NET para leitura incremental de alteracoes no Active Directory, consolidacao com dados de RM e publicacao de eventos para outros servicos.
-
 ### Payment Event Hub
 
 Backend de integracao com ASP.NET Core para recebimento de webhooks Stripe, validacao de assinatura, persistencia do payload bruto, idempotencia e processamento assincrono.
 
 Repositorio separado: [payment-event-hub](https://github.com/Raulcezarsantos/payment-event-hub)
+
+### Controle de Habitos
+
+Aplicacao em React e TypeScript com dashboard de consistencia, check-ins diarios e experiencia responsiva para celular, tablet e desktop.
+
+### Rick and Morty Explorer
+
+Explorer front-end com busca, filtros na URL, paginas separadas e consumo organizado da API publica da serie.
+
+### Streaming Showcase
+
+Projeto visual com React, Vite e TMDB para demonstrar catalogo de streaming, destaque editorial e trailer em modal.
 
 ## Portfolio
 

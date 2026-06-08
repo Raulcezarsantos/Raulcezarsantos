@@ -1,4 +1,5 @@
 import type { Project } from "../../data/projects";
+import { ProjectPreview } from "../../components/shared/ProjectPreview/ProjectPreview";
 import { Button } from "../../components/ui/Button/Button";
 import { SectionTitle } from "../../components/ui/SectionTitle/SectionTitle";
 import { ProjectCard } from "../../components/shared/ProjectCard/ProjectCard";
@@ -31,10 +32,7 @@ export function Projects({ projects, activeProject, onProjectChange }: ProjectsP
 
                 <article className="project-detail-card">
                     <div className="project-detail-media">
-                        <img
-                            src={activeProject.image}
-                            alt={`Preview visual do projeto ${activeProject.title}`}
-                        />
+                        <ProjectPreview project={activeProject} />
                     </div>
 
                     <div className="project-detail-copy">
@@ -55,15 +53,23 @@ export function Projects({ projects, activeProject, onProjectChange }: ProjectsP
                             ))}
                         </ul>
 
-                        {activeProject.repositoryUrl ? (
+                        {activeProject.repositoryUrl || activeProject.liveUrl ? (
                             <div className="project-detail-actions">
-                                <Button
-                                    href={activeProject.repositoryUrl}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    {activeProject.repositoryLabel ?? "Ver projeto"}
-                                </Button>
+                                {activeProject.liveUrl ? (
+                                    <Button href={activeProject.liveUrl} target="_blank" rel="noreferrer">
+                                        {activeProject.liveLabel ?? "Abrir demo"}
+                                    </Button>
+                                ) : null}
+                                {activeProject.repositoryUrl ? (
+                                    <Button
+                                        href={activeProject.repositoryUrl}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        variant="secondary"
+                                    >
+                                        {activeProject.repositoryLabel ?? "Ver projeto"}
+                                    </Button>
+                                ) : null}
                             </div>
                         ) : null}
                     </div>
